@@ -27,19 +27,19 @@ import com.pl.algorithm.utils.MyArrayUtil;
 public class SelectSort {
 
     public static void main(String[] args) {
-        // 100W个样本，每个样本最大长度100，样本中元素最大值100
-        boolean isSuccess = LogarithmicDetectorUtil.selectSortTest(1_000_000, 100, 100);
-        if (isSuccess) {
-            System.out.println("算法可用！");
-        } else {
-            System.out.println("算法可用！");
-        }
+        // 100W个随机样本，每个样本最大长度100，样本中元素最大值100
+        LogarithmicDetectorUtil.selectSortTest(1_000_000, 100, 100);
     }
 
     /**
      * 实现一次
      */
     public static void selectSort01(int[] arr) {
+
+        if (null == arr || arr.length < 2) {
+            return;
+        }
+
         for (int i = 0; i < arr.length; i++) {
             //第一层循环规定好最小值所在的范围i+1 ~ N-1
             for (int j = i + 1; j < arr.length; j++) {

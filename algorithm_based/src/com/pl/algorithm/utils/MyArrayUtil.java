@@ -38,11 +38,16 @@ public class MyArrayUtil {
      * @return 所有相同下标位置的元素相等，返回true
      */
     public static boolean isTwoIntArrayEqual(int[] array01, int[] array02) {
-        if (null == array01
-                || null == array02
-                || (array01.length == array02.length && array01.length == 0)
-                || array01.length != array02.length) {
+        if (null == array01 || null == array02) {
             return false;
+        }
+
+        if (array01.length != array02.length) {
+            return false;
+        }
+
+        if (array01 == null && array02 == null) {
+            return true;
         }
 
         for (int i = 0; i < array01.length; i++) {
