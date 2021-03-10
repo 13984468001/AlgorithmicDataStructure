@@ -26,4 +26,22 @@ public class PrintUtil<T> {
 
     }
 
+    /**
+     * 控制台输出一个整型数组
+     *
+     * @param arr
+     */
+    public static void printIntArr(int[] arr) {
+
+        if (null == arr || arr.length == 0) {
+            return;
+        }
+
+        for (int val : arr) {
+            System.out.print(val + "; ");
+        }
+        System.out.println();
+
+    }
+
 }
