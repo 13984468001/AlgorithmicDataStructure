@@ -1,8 +1,7 @@
-package com.pl.algorithm.utils;
+package com.pl.algorithm.based._01_sort;
 
-import com.pl.algorithm.based.sort.BubbleSort;
-import com.pl.algorithm.based.sort.InsertionSort;
-import com.pl.algorithm.based.sort.SelectSort;
+import com.pl.algorithm.utils.MyArrayUtil;
+import com.pl.algorithm.utils.PrintUtil;
 
 /**
  * @author LIPIAO

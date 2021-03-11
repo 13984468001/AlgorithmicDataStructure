@@ -1,4 +1,4 @@
-package com.pl.algorithm.based.sort;
+package com.pl.algorithm.based._01_sort;
 
 /**
  * @author LIPIAO
